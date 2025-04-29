@@ -6,6 +6,23 @@ import re
 
 import pandas as pd
 
+"""
+
+The purpose of this program is to build the first component
+in a multi-step plan, which would in theory allow me to track
+profitable crypto traders with very little lag. 
+
+In this first component (my program for this assessment), I 
+want to access publicly available and current blockchain data,
+and create a program where users can filter through that data 
+to find what is most relevant. This step is what will help me 
+determine which wallet(s) to track, as through my system we 
+will be able to filter through transactions to find wallets 
+with desirable characteristics/activity, indicating that they 
+would be good to track.
+
+"""
+
 # Defines my constants, sets the columns, sources the CSV file, and sets the window size
 CSV_FILE = "/Users/reillyturner/Desktop/FailingProject/extendedTradeData.csv"
 REQUIRED_COLUMNS = {"trader_wallet", "token_bought", "token_sold", "trade_value_usd", "timestamp", "tx_hash"}
